@@ -29,7 +29,7 @@ Weapon::Weapon(std::string type) : type(type)
 	std::cout << "Parametric constructor called" << std::endl;
 }
 
-std::string	const & Weapon::getType(void) const
+const std::string&	Weapon::getType(void) const
 {
 	return(this->type);
 }

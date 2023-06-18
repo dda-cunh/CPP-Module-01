@@ -24,22 +24,27 @@ HumanB::~HumanB(void)
 	std::cout << "Destructor called" << std::endl;
 }
 
-HumanB::HumanB(std::string name, Weapon weapon) : name(name) , weapon(weapon)
+HumanB::HumanB(std::string name, Weapon *weapon) : name(name) , weapon(weapon)
 {
 	std::cout << "Parametric constructor called" << std::endl;
 }
 
-HumanB::HumanB(std::string name) : name(name) , weapon("Hands")
+HumanB::HumanB(std::string name) : name(name), weapon(NULL)
 {
     std::cout << "One parameter constructor called" << std::endl;
 }
 
 void    HumanB::attack(void)
 {
-    std::cout << this->name << " attacks with their " << this->weapon.getType() << std::endl;
+	if (this->weapon == NULL)
+	{
+		std::cout << this->name << " has no weapon" << std::endl;
+		return ;
+	}
+    std::cout << this->name << " attacks with their " << this->weapon->getType() << std::endl;
 }
 
-void   HumanB::setWeapon(Weapon weapon)
+void   HumanB::setWeapon(Weapon &newWeapon)
 {
-    this->weapon = weapon;
+    weapon = &newWeapon;
 }

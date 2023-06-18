@@ -3,7 +3,6 @@
 
 # include <iostream>
 
-
 class	Weapon
 {
 	public:
@@ -13,13 +12,11 @@ class	Weapon
 		~Weapon(void);
 
 		Weapon(std::string);
-		std::string	const & getType(void) const;
+		const std::string&	getType(void) const;
 		void	setType(std::string newtype);
 		void	announce(void);
 	private:
 		std::string	type;
 };
-
-
 
 #endif
