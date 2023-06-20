@@ -34,6 +34,8 @@ int	replaceIf(std::string filename, std::string s1, std::string s2)
 			wFile << line[i];
 		}
 	}
+	wFile.close();
+	rFile.close();
 	return (exit_(0));
 }
 
