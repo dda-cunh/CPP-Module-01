@@ -1,4 +1,4 @@
-#include "HumanA.hpp"
+#include "../inc/HumanA.hpp"
 
 HumanA::HumanA(void)
 {
@@ -24,7 +24,7 @@ HumanA::~HumanA(void)
 	std::cout << "Destructor called" << std::endl;
 }
 
-HumanA::HumanA(std::string name, Weapon& weapon) : name(name) , weapon(&weapon)
+HumanA::HumanA(std::string newName, Weapon& newWeapon) : name(newName) , weapon(&newWeapon)
 {
 	std::cout << "Parametric constructor called" << std::endl;
 }

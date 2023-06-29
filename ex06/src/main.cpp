@@ -1,4 +1,4 @@
-#include "Harl.hpp"
+#include "../inc/Harl.hpp"
 
 int	get_type(std::string s)
 {

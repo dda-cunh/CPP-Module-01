@@ -1,4 +1,4 @@
-#include "Harl.hpp"
+#include "../inc/Harl.hpp"
 
 const std::string	YELLOW	= "\033[33m";
 const std::string	GREEN	= "\033[32m";

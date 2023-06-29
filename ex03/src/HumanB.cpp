@@ -1,4 +1,4 @@
-#include "HumanB.hpp"
+#include "../inc/HumanB.hpp"
 
 HumanB::HumanB(void)
 {
@@ -24,12 +24,12 @@ HumanB::~HumanB(void)
 	std::cout << "Destructor called" << std::endl;
 }
 
-HumanB::HumanB(std::string name, Weapon *weapon) : name(name) , weapon(weapon)
+HumanB::HumanB(std::string newName, Weapon *newWeapon) : name(newName) , weapon(newWeapon)
 {
 	std::cout << "Parametric constructor called" << std::endl;
 }
 
-HumanB::HumanB(std::string name) : name(name), weapon(NULL)
+HumanB::HumanB(std::string newName) : name(newName)
 {
     std::cout << "One parameter constructor called" << std::endl;
 }

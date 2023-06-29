@@ -1,4 +1,4 @@
-#include "Weapon.hpp"
+#include "../inc/Weapon.hpp"
 
 Weapon::Weapon(void)
 {
@@ -24,7 +24,7 @@ Weapon::~Weapon(void)
 	std::cout << "Destructor called for " << this->getType() << std::endl;
 }
 
-Weapon::Weapon(std::string type) : type(type)
+Weapon::Weapon(std::string newType) : type(newType)
 {
 	std::cout << "Parametric constructor called" << std::endl;
 }

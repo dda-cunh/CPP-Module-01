@@ -1,4 +1,4 @@
-#include "Zombie.hpp"
+#include "../inc/Zombie.hpp"
 
 Zombie::Zombie(void)
 {
@@ -24,7 +24,7 @@ Zombie::~Zombie(void)
 	std::cout << "Destructor called for " << this->getName() << std::endl;
 }
 
-Zombie::Zombie(std::string name) : name(name)
+Zombie::Zombie(std::string newName) : name(newName)
 {
 	std::cout << "Parametric constructor called" << std::endl;
 }
